@@ -86,7 +86,7 @@ function renderPlants(plants) {
     <h3 class="text-lg font-semibold mb-1">${plant.name}</h3>
     <p class="text-gray-600 text-sm mb-2">${plant.description}</p>
     <p class="text-green-700 font-bold mb-2">Price: ${plant.price}৳</p>
-    <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 mb-2"
+    <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 mb-2"
       onclick="addToCart('${plant.name}', ${plant.price})">Add to Cart</button>
   </div>
 `;
