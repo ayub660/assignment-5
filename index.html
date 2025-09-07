@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- navbar start here -->
-    <nav class="bg-[#15803D] text-white shadow-sm">
+    <nav class="bg-[#15803D] text-[white] shadow-sm">
         <div class="navbar max-w-7xl mx-auto px-4 lg:px-8">
   <div class="navbar-start">
     <div class="dropdown">
@@ -69,7 +69,74 @@
 
     </header>
 
+ <!-- categories section start here  -->
+
+
+ <main class="max-w-7xl mx-auto px-4 py-16 bg-[#f0fdf4]">
+    <h1 class=" text-center mb-8 font-extrabold 
+bg-neutra-dark">Choose Your Plant</h1>
+    <!--  Left Column  -->
+    <div class="grid grid-cols-1 lg:grid-cols-6 gap-6">
+
+      <!--  Sidebar: Categories -->
+      <aside class="bg-[#DCFCE7] shadow rounded-lg p-6 lg:col-span-1">
+        <h2 class=" font-bold text-[#000000] mb-4 ">Categories</h2>
+        <ul id="category-list" class="space-y-2">
+          <!-- JS will add items here -->
+        </ul>
+      </aside>
+
+      <!-- Plant Cards -->
+      <section class="lg:col-span-4">
+        <div id="plants-container" class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-3">
+          
+        </div>
+      </section>
+
+      <!--  Cart Section -->
+      <aside class="bg-white shadow rounded-lg p-6 lg:col-span-1">
+        <h2 class="text-xl font-bold text-[Neutral/Dark] mb-4 border-b pb-2">Your Cart </h2>
+        <ul id="cart-items" class="space-y-2 text-sm text-gray-700">
+         
+        </ul>
+        <div class="mt-4 font-semibold text-[#1f2937]">
+          Total: <span id="cart-total">0</span> ৳
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- about section start here -->
+
+<section class="bg-[#DCFCE7] py-12 px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold py-2 px-6 text-neutra-black mb-10">
+      About the Campaign </h2>
+  </div>
+
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
    
+    <div class="flex-shrink-0">
+      <img src="./assets/about.png" alt="" class=" shadow-md w-72 h-auto" />
+    </div>
+
+   <!-- rigth side text  -->
+    <div class="text-neutra-black text-left mt-15">
+      <p class="mb-4 ">
+        Green Earth is a global tree plantation initiative dedicated to fighting climate change.
+        Since our start, we've planted over 500,000 trees worldwide. By joining our campaign, you help restore forests,
+        create habitats for wildlife, and combat global warming.
+      </p>
+      <ul class="list-disc ml-8">
+        <li>Restoration of natural habitats</li>
+        <li>Improvement of air quality</li>
+        <li>Support for local communities</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
     <script src="./script.js"></script>
 </body>
