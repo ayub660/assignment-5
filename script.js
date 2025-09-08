@@ -18,7 +18,7 @@ function loadCategories() {
       const allLi = document.createElement("li");
       allLi.textContent = "All Trees";
       allLi.className =
-        "cursor-pointer text-gray-700 pl-2 font-sm transition category-item hover:bg-green-100 hover:text-green-800 hover:font-semibold hover:pl-3 rounded";
+        "cursor-pointer hover:bg-color text-gray-700 pl-2 font-sm transition category-item hover:bg-green-100 hover:text-green-800 hover:font-semibold hover:pl-3 rounded";
       allLi.addEventListener("click", () => loadAllPlants());
       categoryListElement.appendChild(allLi);
 
@@ -104,10 +104,32 @@ function renderPlants(plants) {
     })">Add to Cart</button>
       </div>
     `;
+    // modal ?///////
+    card.addEventListener("click", () => showPlantModal(plant));
+    const addToCartBtn = card.querySelector(".add-to-cart-btn");
+    if (addToCartBtn) {
+      addToCartBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        addToCart(plant.name, plant.price);
+      });
+    }
 
     plantsContainer.appendChild(card);
   });
 }
+// modal function
+function showPlantModal(plant) {
+  document.getElementById("modal-plant-image").src = plant.image;
+  document.getElementById("modal-plant-name").textContent = plant.name;
+  document.getElementById("modal-plant-category").textContent = `Category: ${
+    plant.category || "Fruit Tree"
+  }`;
+  document.getElementById("modal-plant-description").textContent =
+    plant.description;
+  document.getElementById("modal-plant-price").textContent = `৳${plant.price}`;
+  document.getElementById("plant_modal_toggle").checked = true;
+}
+
 // Add to Cart
 
 function addToCart(name, price) {

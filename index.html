@@ -138,15 +138,15 @@ bg-neutra-dark">Choose Your Plant</h1>
           <h2 class="text-2xl font-semibold py-2 px-6 text-neutra-black mb-10">Our Impact </h2>
             <div class="grid grid-cols-1 md:grid-cols-3  gap-8">
               <!-- card 1 -->
-              <div class="bg-white  rounded-lg  p-10">
+              <div class="bg-white rounded-lg p-10 hover:bg-green-100 transition">
     <h2 class="text-3xl font-bold text-[#15803d] mb-3">500k+</h2>
     <p class="text-[#1f2937]">Trees Planted</p>
   </div>
-   <div class="bg-white rounded-lg  p-10">
+   <div class="bg-white rounded-lg hover:bg-green-100 transition p-10">
     <h2 class="text-3xl font-bold text-[#15803d] mb-3">120+</h2>
     <p class="text-[#1f2937]">Communities Involved</p>
   </div>
-   <div class="bg-white rounded-lg  p-10">
+   <div class="bg-white rounded-lg hover:bg-green-100 transition p-10">
     <h2 class="text-3xl font-bold text-[#15803d] mb-3">30+</h2>
     <p class="text-[#1f2937]">Countries Reached</p>
   </div>
@@ -202,18 +202,18 @@ bg-neutra-dark">Choose Your Plant</h1>
       </div>
 
      </footer>
+     <input type="checkbox" id="plant_modal_toggle" class="modal-toggle" />
 
-     <!-- The button to open modal -->
-<label for="my_modal_6" class="btn">open modal</label>
-
-<!-- Put this part before </body> tag -->
-<input type="checkbox" id="my_modal_6" class="modal-toggle" />
 <div class="modal" role="dialog">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">This modal works with a hidden checkbox!</p>
+  <div class="modal-box relative">
+    <label for="plant_modal_toggle" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <img id="modal-plant-image" src="" alt="" class="w-full h-48 object-cover rounded mb-3" />
+    <h3 id="modal-plant-name" class="text-lg font-bold"></h3>
+    <p id="modal-plant-category" class="mb-1 text-sm text-gray-600"></p>
+    <p id="modal-plant-description" class="mb-3 text-gray-700 text-sm leading-relaxed"></p>
+    <p id="modal-plant-price" class="text-green-700 font-bold text-lg"></p>
     <div class="modal-action">
-      <label for="my_modal_6" class="btn">Close!</label>
+      <label for="plant_modal_toggle" class="btn btn-success">Close</label>
     </div>
   </div>
 </div>
