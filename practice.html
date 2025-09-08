@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"
+      integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <section class="bg-green-800 min-h-screen flex items-center justify-center">
+      <div class="w-full max-w-md relative flex flex-col items-center">
+        <div class="absolute -top-15 bg-green-800">
+          <h2 class="text-white text-2xl font-semibold text-center">
+            Plant a Tree Today
+          </h2>
+        </div>
+
+        <!--Form Card -->
+        <div class="bg-green-700 p-8 pt-10 rounded-lg shadow-lg w-full">
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full p-3 rounded-md bg-white text-[#1f2937]"
+            />
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              class="w-full p-3 rounded-md bg-white text-[#1f2937]"
+            />
+            <select class="w-full p-3 rounded-md bg-white text-[#1f2937]">
+              <option class="text-black">Number of Trees</option>
+              <option class="text-[#1f2937]">1 Tree</option>
+              <option class="text-[#1f2937]">2 Trees</option>
+              <option class="text-[#1f2937]">3 Trees</option>
+            </select>
+            <button
+              type="submit"
+              class="w-full bg-yellow-400 text-[#15803d] font-semibold py-3 rounded-full transition"
+            >
+              Donate Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
