@@ -20,13 +20,9 @@
     <nav class="bg-[#15803D] text-[white] shadow-sm">
         <div class="navbar max-w-7xl mx-auto px-4 lg:px-8">
   <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      
-    </div>
-    <a class="btn btn-ghost text-xl">Green Earth</a>
+    <img src="./assets/489969.png" alt="" class="h-6 w-6 text-white" fill="none">
+
+    <a class="font-bold text-xl">Green Earth</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
@@ -206,6 +202,21 @@ bg-neutra-dark">Choose Your Plant</h1>
       </div>
 
      </footer>
+
+     <!-- The button to open modal -->
+<label for="my_modal_6" class="btn">open modal</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">This modal works with a hidden checkbox!</p>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn">Close!</label>
+    </div>
+  </div>
+</div>
 
 
     <script src="./script.js"></script>
