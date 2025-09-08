@@ -3,6 +3,8 @@ const plantsContainer = document.getElementById("plants-container");
 const cartItemsElement = document.getElementById("cart-items");
 const cartTotalElement = document.getElementById("cart-total");
 
+const loadingElement = document.getElementById("loading");
+
 let cart = [];
 
 // Load Categories
@@ -44,9 +46,11 @@ function loadCategories() {
 
 // Load All Plants
 function loadAllPlants() {
+  loadingElement.classList.remove("hidden"); // spinner loader
   fetch("https://openapi.programming-hero.com/api/plants")
     .then((res) => res.json())
     .then((result) => {
+      loadingElement.classList.add("hidden"); //spinner vanish
       const plants = result.plants;
       renderPlants(plants);
     })

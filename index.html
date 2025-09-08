@@ -16,6 +16,7 @@
 
 </head>
 <body>
+  
     <!-- navbar start here -->
     <nav class="bg-[#15803D] text-[white] shadow-sm">
         <div class="navbar max-w-7xl mx-auto px-4 lg:px-8">
@@ -65,10 +66,14 @@
 
     </header>
 
- <!-- categories section start here  -->
+ 
+  <!-- ///loading- spinner -->
 
-
- <main class="max-w-7xl mx-auto px-4 py-16 bg-[#f0fdf4]">
+<div id="loading" class="bg-[#f0fdf4] hidden flex justify-center">
+  <div> <span class="loading loading-dots loading-xl"></span></div>
+       </div>
+<!-- categories section start here  -->
+ <main class="max-w-8xl mx-auto px-8 py-8  bg-[#f0fdf4]">
     <h1 class=" text-center mb-8 font-extrabold 
 bg-neutra-dark">Choose Your Plant</h1>
     <!--  Left Column  -->
@@ -83,6 +88,8 @@ bg-neutra-dark">Choose Your Plant</h1>
       </aside>
 
       <!-- Plant Cards -->
+       
+       
       <section class="lg:col-span-4">
         <div id="plants-container" class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-3">
           
